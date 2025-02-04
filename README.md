@@ -14,7 +14,7 @@ It acts solely as a planner, the individual must still post the planned items th
 
 ## How to Run the Project
 
-Go to this [link](https://cse110-fa22-group10.github.io/cse110-fa22-group10/scheduler/index.html) to the application.
+Go to this [link](https://cse110-fa22-group10.github.io/Multi-Platform-Post-Scheduler/scheduler/index.html) to the application.
 
 
 ## How to Use the Project
