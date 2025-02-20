@@ -1,7 +1,7 @@
 describe('Basic user flow for Website', () => {
     // First, visit the scheduler website
     beforeAll(async () => {
-      await page.goto('https://cse110-fa22-group10.github.io/cse110-fa22-group10/scheduler/');
+      await page.goto('https://cse110-fa22-group10.github.io/Multi-Platform-Post-Scheduler/scheduler/');
     });
   
     // Next, check to make sure that all 0 <post-card> elements have loaded
@@ -26,7 +26,7 @@ describe('Basic user flow for Website', () => {
         timeout: 50000
       });
       curr_url = await page.url();
-      expect(curr_url).toBe('https://cse110-fa22-group10.github.io/cse110-fa22-group10/scheduler/create_post/createFb.html');
+      expect(curr_url).toBe('https://cse110-fa22-group10.github.io/Multi-Platform-Post-Scheduler/scheduler/create_post/createFb.html');
 
       await page.click('button[id=back-button]');
       await page.reload();
@@ -34,35 +34,35 @@ describe('Basic user flow for Website', () => {
         timeout: 50000
       });
       curr_url = await page.url();
-      expect(curr_url).toBe('https://cse110-fa22-group10.github.io/cse110-fa22-group10/scheduler/index.html');
+      expect(curr_url).toBe('https://cse110-fa22-group10.github.io/Multi-Platform-Post-Scheduler/scheduler/index.html');
 
       // Due to the long navigation time, the test is commenedt out in Github Actions. 
       // If wanted, this can be tested locally
       // await page.click('button[id=twitter-create]');
       // await page.reload();
       // curr_url = await page.url();
-      // expect(curr_url).toBe('https://cse110-fa22-group10.github.io/cse110-fa22-group10/scheduler/create_post/createTw.html');
+      // expect(curr_url).toBe('https://cse110-fa22-group10.github.io/Multi-Platform-Post-Scheduler/scheduler/create_post/createTw.html');
 
       // await page.reload();
 
       // await page.click('button[id=back-button]');
       // await page.reload();
       // curr_url = await page.url();
-      // expect(curr_url).toBe('https://cse110-fa22-group10.github.io/cse110-fa22-group10/scheduler/index.html');
+      // expect(curr_url).toBe('https://cse110-fa22-group10.github.io/Multi-Platform-Post-Scheduler/scheduler/index.html');
 
       // await page.reload();
 
       // await page.click('button[id=instagram-create]');
       // await page.reload();
       // curr_url = await page.url();
-      // expect(curr_url).toBe('https://cse110-fa22-group10.github.io/cse110-fa22-group10/scheduler/create_post/createIns.html');
+      // expect(curr_url).toBe('https://cse110-fa22-group10.github.io/Multi-Platform-Post-Scheduler/scheduler/create_post/createIns.html');
 
       // await page.reload();
 
       // await page.click('button[id=back-button]');
       // await page.reload();
       // curr_url = await page.url();
-      // expect(curr_url).toBe('https://cse110-fa22-group10.github.io/cse110-fa22-group10/scheduler/index.html');
+      // expect(curr_url).toBe('https://cse110-fa22-group10.github.io/Multi-Platform-Post-Scheduler/scheduler/index.html');
 
     }, 1000000);
 
@@ -183,7 +183,7 @@ describe('Basic user flow for Website', () => {
       await page.click('input[type=submit]');
       
       //Force the page the go back to the main page
-      await page.goto('https://cse110-fa22-group10.github.io/cse110-fa22-group10/scheduler/index.html');
+      await page.goto('https://cse110-fa22-group10.github.io/Multi-Platform-Post-Scheduler/scheduler/index.html');
       // await page.reload();
       // await page.waitForSelector('button[id=back-button]', {
       //   timeout: 50000
@@ -212,7 +212,7 @@ describe('Basic user flow for Website', () => {
       await button.click();
       
       //Force the page the go back to the main page
-      await page.goto('https://cse110-fa22-group10.github.io/cse110-fa22-group10/scheduler/index.html');
+      await page.goto('https://cse110-fa22-group10.github.io/Multi-Platform-Post-Scheduler/scheduler/index.html');
 
       //Get the post from local Storage
       const post = await page.evaluate(() => {
@@ -297,12 +297,12 @@ describe('Basic user flow for Website', () => {
       })
 
       //Force the page the go back to the main page
-      await page.goto('https://cse110-fa22-group10.github.io/cse110-fa22-group10/scheduler/index.html');
+      await page.goto('https://cse110-fa22-group10.github.io/Multi-Platform-Post-Scheduler/scheduler/index.html');
 
       await page.click('button[class=delete-all]');
 
       //Force the page the go back to the main page
-      await page.goto('https://cse110-fa22-group10.github.io/cse110-fa22-group10/scheduler/index.html');
+      await page.goto('https://cse110-fa22-group10.github.io/Multi-Platform-Post-Scheduler/scheduler/index.html');
       await page.reload();
       //Get the post from local Storage
       const post = await page.evaluate(() => {
